@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 Users from Atlas DB#{title}  
+  if users 
+    each user in users
+      .alert.alert-warning Name: #{user.name} 
+        div Email: #{user.email}
